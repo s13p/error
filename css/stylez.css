@@ -2926,6 +2926,11 @@ a {
         display: block;
         text-align: left !important;
     }
+    .scramble-text {
+        font-size: 40px;
+        width: 100vw;
+        word-wrap: break-word;
+    }
     .desktop-icon-wrapper.is-whitepaper-icon {
         display: block;
         position: static;
