@@ -2899,14 +2899,18 @@ a {
     }
     .desktop-wrapper {
         z-index: auto;
-        height: 100vh;
+        max-height: 100vh;
+        max-width: 100vw;
         grid-column-gap: 16px;
         grid-row-gap: 16px;
         box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
         background-image: url("../images/bg.gif");
-        background-position: 0 0;
-        background-size: auto;
+
+
         flex-direction: column;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
     }
     .desktop-icons {
         width: 100%;
@@ -2971,7 +2975,7 @@ a {
         bottom: 101%;
     }
     .clock {
-        
+        display: none;
     }
     .logo-center {
         z-index: 1;
